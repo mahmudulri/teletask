@@ -140,7 +140,6 @@ class _SetNumberState extends State<SetNumber> {
                     child: TextField(
                       controller: numberController,
                       maxLines: null,
-                      expands: true,
                       decoration: const InputDecoration(
                         labelText: 'Numbers (one per line)',
                         border: OutlineInputBorder(),
