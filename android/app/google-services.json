@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1036948660110",
+    "project_id": "mypassmanager-33a37",
+    "storage_bucket": "mypassmanager-33a37.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036948660110:android:b806ba97cf2f1571d48edf",
+        "android_client_info": {
+          "package_name": "com.example.teletask"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB50IDp0nyGspxJid_KZH1-YNblwjcPhJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1036948660110:android:11fb6533ab59bb6cd48edf",
+        "android_client_info": {
+          "package_name": "com.hasanpassmanager.info"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB50IDp0nyGspxJid_KZH1-YNblwjcPhJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
