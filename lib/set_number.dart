@@ -104,7 +104,14 @@ class _SetNumberState extends State<SetNumber> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Manage Number Lists")),
+      appBar: AppBar(
+          title: const Text(
+        "Manage Number Lists",
+        style: TextStyle(
+          fontSize: 22,
+          fontWeight: FontWeight.w600,
+        ),
+      )),
       body: Row(
         children: [
           // Left panel: Form
@@ -149,10 +156,20 @@ class _SetNumberState extends State<SetNumber> {
                   const SizedBox(height: 16),
                   ElevatedButton.icon(
                     onPressed: uploadNumberList,
-                    icon: const Icon(Icons.upload),
-                    label: const Text("Upload to Firestore"),
+                    icon: const Icon(
+                      Icons.upload,
+                      color: Colors.white,
+                    ),
+                    label: const Text(
+                      "Upload Now",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 18,
+                      ),
+                    ),
                     style: ElevatedButton.styleFrom(
-                      minimumSize: const Size.fromHeight(50),
+                      minimumSize: Size.fromHeight(50),
+                      backgroundColor: Colors.green,
                     ),
                   ),
                 ],
@@ -196,9 +213,15 @@ class _SetNumberState extends State<SetNumber> {
                           children: snapshot.data!.docs.map((doc) {
                             String serial = doc['serial'] ?? 'Unnamed';
                             return Card(
-                              margin: const EdgeInsets.symmetric(vertical: 6),
+                              margin: EdgeInsets.symmetric(vertical: 6),
                               child: ListTile(
-                                title: Text(serial),
+                                title: Text(
+                                  serial,
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 18,
+                                  ),
+                                ),
                                 trailing:
                                     const Icon(Icons.delete, color: Colors.red),
                                 onTap: () => showDeleteDialog(doc.id, serial),
